@@ -12,10 +12,10 @@
 Historical bike rental analytics and 30-day hourly forecasting.
 
 Forecast source:
-    next_30_days_forecast(4).csv
+    next_30_days_forecast.csv
 
 Historical source:
-    Dataset(4).csv
+    Dataset.csv
 
 IMPORTANT:
     The supplied forecast is used without retraining.
@@ -54,10 +54,10 @@ st.set_page_config(
 
 BASE_DIR = Path(__file__).resolve().parent
 
-DATA_FILE = BASE_DIR / "Dataset(4).csv"
+DATA_FILE = BASE_DIR / "Dataset.csv"
 
 FORECAST_FILE = (
-    BASE_DIR / "next_30_days_forecast(4).csv"
+    BASE_DIR / "next_30_days_forecast.csv"
 )
 
 
@@ -592,8 +592,8 @@ except Exception as error:
     )
 
     st.info(
-        "Keep Dataset(4).csv and "
-        "next_30_days_forecast(4).csv "
+        "Keep Dataset.csv and "
+        "next_30_days_forecast.csv "
         "in the same folder as application.py."
     )
 
@@ -1455,4 +1455,3 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
